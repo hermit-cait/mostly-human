@@ -19,16 +19,16 @@ h2 {
   line-height: 0.8em;
 }
 
-p, label{
+p, a {
   font-family: 'Noto Sans';
   font-size: 16px;
 }
 
-h1, h2, p, label {
+h1, h2, p, a {
   color: #fff;
 }
 
-header, p {
+header {
   text-align: center;
 }
 
@@ -42,58 +42,25 @@ main {
   overflow-x: scroll;
 }
 
-.orange-text {
+#welcome {
   color: orange;
 }
 
 .survey-grid {
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: repeat(22, 400px);
+  grid-template-columns: repeat(21, 400px);
   height: 50vh;
-  width: 9720px;
+  width: 9280px;
   padding: 40px;
   align-content: space-around;
+  jusfity-items: start;
   grid-gap: 40px;
 }
 
-.question-area {
-  border: 5px dashed #e8511f;
+.survey-grid div {
+  border: 1px solid orange;
   height: 46.5vh;
-}
-
-.question-content {
-  /*border: 1px solid green;*/
-  width: 300px;
-  margin: 20px auto;
-}
-
-.answer-yes-no {
-  /*border: 1px solid white;*/
-  width: 60px;
-  margin: 0 auto;
-}
-
-.answer-small {
-  /*border: 1px solid white;*/
-  width: 110px;
-  margin: 0 auto;
-}
-
-.answer-medium {
-  /*border: 1px solid white;*/
-  width: 170px;
-  margin: 0 auto;
-}
-
-.answer-big {
-  /*border: 1px solid white;*/
-  width: 230px;
-  margin: 0 auto;
-}
-
-#submit {
-  margin: 20px 121px;
 }
 
 #footer {
