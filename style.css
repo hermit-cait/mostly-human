@@ -1,0 +1,170 @@
+body {
+  background: url("https://i.imgur.com/EOX5x2t.jpg");
+  background-size: cover;
+}
+
+h1 {
+  font-family: Bitter;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 0.8em;
+  animation-name: bounceInDown;
+  animation-duration: 1s;
+}
+
+h2 {
+  font-family: Bitter;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 0.8em;
+}
+
+p, label {
+  font-family: 'Noto Sans';
+  font-size: 16px;
+}
+
+h1, h2, p, label {
+  color: #fff;
+}
+
+header, p {
+  text-align: center;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #f8405c;
+}
+
+::selection {
+  color: #fff;
+  background: #f8405c;
+}
+
+
+main {
+  background: rgba(0, 0, 0, 0.7);
+  width: 80vw;
+  height: 375px;
+  box-sizing: border-box;
+  padding-top: 21px;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.survey-grid {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(22, 400px);
+  height: 315px;
+  width: 9400px;
+  padding: 26px;
+  align-content: space-around;
+  grid-gap: 26px;
+}
+
+.question-area {
+  border: 5px dashed #e8511f;
+  height: 300px;
+}
+
+.question-content {
+  /*border: 1px solid green;*/
+  width: 300px;
+  margin: 20px auto;
+}
+
+.answer-yes-no {
+  /*border: 1px solid white;*/
+  width: 60px;
+  margin: 0 auto;
+}
+
+.answer-small {
+  /*border: 1px solid white;*/
+  width: 110px;
+  margin: 0 auto;
+}
+
+.answer-medium {
+  /*border: 1px solid white;*/
+  width: 170px;
+  margin: 0 auto;
+}
+
+.answer-big {
+  /*border: 1px solid white;*/
+  width: 230px;
+  margin: 0 auto;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+}
+
+div.footer {
+  margin: 0 auto;
+  width: 350px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+div.footer p {
+  font-size: 13px;
+  text-align: center;
+}
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media only screen and (min-width: 1365px) {
+
+  header {
+    margin-top: 100px;
+  }
+
+  main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  div.footer {
+    margin-bottom: 5px;
+  }
+
+}
